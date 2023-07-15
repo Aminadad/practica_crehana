@@ -1,0 +1,18 @@
+#!/usr/bin/env node
+
+require('dotenv').config();
+
+const http = require('http');
+const app = require('../app');
+
+
+const puerto = process.env.PUERTO
+app.set('port',puerto);
+
+let servidor = http.createServer(app);
+
+servidor.listen(puerto);
+servidor.on('Listening', ()=>{console.log(`Listening at http://localhost:${puerto}`)});
+
+servidor.on('err', (err) =>{throw err});
+

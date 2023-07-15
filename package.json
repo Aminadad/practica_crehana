@@ -1,0 +1,24 @@
+{
+  "name": "myproyectocrehana",
+  "version": "1.0.0",
+  "description": "Este es mi Proyecto para mi curso Crehana",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./bin/www",
+    "dev": "nodemon ./bin/www"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "handlebars": "^4.7.7",
+    "hbs": "^4.2.0",
+    "http": "^0.0.1-security"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
